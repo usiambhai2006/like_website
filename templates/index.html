@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Free Like Sender</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background"></div>
+
+    <header>
+        <h1>🔥 Free Like Sender</h1>
+        <p>Professional Free Fire Like Tool</p>
+    </header>
+
+    <main>
+
+        <div class="card">
+
+            <h2>Send Likes</h2>
+
+            <label>Choose Region</label>
+
+            <select id="region">
+                <option value="bd">🇧🇩 Bangladesh</option>
+                <option value="ind">🇮🇳 India</option>
+                <option value="br">🇧🇷 Brazil</option>
+            </select>
+
+            <label>Enter UID</label>
+
+            <input type="number" id="uid" placeholder="Enter Free Fire UID">
+
+            <button onclick="sendLike()">
+                🚀 Send Likes
+            </button>
+
+        </div>
+
+        <div class="result-card">
+
+            <h2>API Response</h2>
+
+            <pre id="result">
+No Data Yet
+            </pre>
+
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Free Like Website | Made By Siam
+    </footer>
+
+    <div id="notification"></div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>
