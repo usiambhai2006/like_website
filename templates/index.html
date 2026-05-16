@@ -66,6 +66,56 @@ No Data Yet
 
     <script src="/static/script.js"></script>
 
+    
+<!-- Telegram Floating Button -->
+<a href="https://t.me/fflikemax" target="_blank" class="telegram-btn">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" alt="Telegram">
+</a>
+
+<style>
+.telegram-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 68px;
+    height: 68px;
+    background: linear-gradient(135deg, #00bfff, #0088cc);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(0,136,204,0.6);
+    z-index: 9999;
+    animation: float 2s ease-in-out infinite;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.telegram-btn:hover {
+    transform: scale(1.12);
+    box-shadow: 0 0 30px rgba(0,136,204,0.9);
+}
+
+.telegram-btn img {
+    width: 38px;
+    height: 38px;
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+}
+
+/* Up Down Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+</style>
+
 </body>
 
 </html>
